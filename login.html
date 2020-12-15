@@ -11,18 +11,23 @@
     <link rel="stylesheet" href="./css/style/estilos.css">
     <link rel="stylesheet" href="font/bootstrap-icons.css">
 
+    <!--Estilos de letra-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <div class="container py-5">
+    <!-- Encabezado de la pagina-->
+    <div class="container pt-4">
         <div class="row align-items-start">
-            <div class="col-6">
-                <img src="img/dragon-eye-3235673_960_720.png" class="img-fluid img" alt=""> L&K SOLUCIONES
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="img/unnamed.png" class="img-fluid img" alt="">
             </div>
-            <div class="col-6 text-center">
-                <div class="py-5">
-                    <p>Inicie Sesion con
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+                <div class="pt-4">
+                    <p class="encabezado">Inicie Sesion con
                         <i class="bi bi-facebook px-3 icon-facebook"></i>
                         <i class="bi bi-twitter icon-twitter"></i>
                         <i class="bi bi-instagram px-3 icon-instagram"></i>
@@ -32,6 +37,72 @@
             </div>
         </div>
     </div>
+
+    <!--Cuerpo de la pagina-->
+    <div class="container pt-3">
+        <div class="row align-items-start">
+            <!--Inicio Imagen -->
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="https://i.imgur.com/uNGdWHi.png" class="img-fluid rounded" alt="">
+            </div>
+            <!--Fin de imagen-->
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <!--Inicio de linea-->
+                <div class="row px-2 mb-1">
+                    <div class="linea"></div><small class="o text-center">O Ingrese Los Siguientes Datos</small>
+                    <div class="linea"></div>
+                </div>
+                <!--Fin de la linea-->
+                <div class="mb-3 pt-5">
+                    <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="example@hotmail.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleFormControlInput2"
+                        placeholder="*************">
+                </div>
+
+                <div class="row justify-content-between pt-2">
+                    <div class="col-sm-9 col-md-12 col-lg-9">
+                        <p>¿Aun no tienes cuenta?
+                            <a href="http://" class="registro">
+                                <i class="bi bi-person-fill px-1"> Registrate</i>
+                            </a>
+                        </p>
+                        <a href="http://">
+                            <p>Reestablecer Contraseña</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-3 col-md-12 col-lg-3">
+                        <button type="button" class="btn btn-outline-primary">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--Pie de pagina-->
+    <footer class="pt-5 text-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <small class="ml-4 ml-sm-5 mb-2 footer">Copyright &copy; Luis Gelvis.</small>
+                </div>
+                <div class="col-12">
+                    <i class="bi bi-facebook px-3 icon-facebook"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-linkedin icon-linkedin" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212h-2.4s.03-6.547 0-7.225h2.4v1.023a5.54 5.54 0 0 0-.016.025h.016v-.025c.32-.493.89-1.193 2.165-1.193 1.58 0 2.764 1.033 2.764 3.252v4.143h-2.4V9.529c0-.972-.348-1.634-1.217-1.634-.664 0-1.059.447-1.233.878-.063.154-.079.37-.079.586v4.035z" />
+                    </svg>
+                    <i class="bi bi-instagram px-3 icon-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 

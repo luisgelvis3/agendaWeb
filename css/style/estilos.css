@@ -1,5 +1,17 @@
+body {
+  background-color: azure;
+}
+p,
+small,
+label {
+  font-family: "Open Sans";
+}
 .img {
-  width: 16%;
+  width: 36%;
+}
+
+.encabezado {
+  font-weight: bolder;
 }
 
 .icon-facebook {
@@ -13,6 +25,31 @@
 }
 
 .icon-instagram {
-  color: #d5303e;
+  color: #f62626;
   font-size: 1.6em;
+}
+
+.icon-linkedin {
+  color: #0e76a8;
+}
+
+.linea {
+  height: 1px;
+  width: 30%;
+  background-color: #e0e0e0;
+  margin-top: 12px;
+}
+.o {
+  width: 40%;
+  font-weight: bold;
+}
+
+.registro {
+  text-decoration: none;
+  color: blue;
+}
+
+.footer {
+  font-weight: bold;
+  font-size: 16px;
 }
