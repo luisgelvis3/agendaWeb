@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
 
+    <!--js-->
+    <script src="./vista/js/js-modal/modal.js"></script>
+    <script src="./vista/js/bootstrap/bootstrap.js"></script>
+
 </head>
 
 <body>
@@ -47,38 +51,46 @@
             </div>
             <!--Fin de imagen-->
             <div class="col-sm-12 col-md-6 col-lg-6">
-                <!--Inicio de linea-->
+                <!--Inicio de linea formulario-->
                 <div class="row px-2 mb-1">
                     <div class="linea"></div><small class="o text-center">O Ingrese Los Siguientes Datos</small>
                     <div class="linea"></div>
                 </div>
-                <!--Fin de la linea-->
-                <div class="mb-3 pt-5">
-                    <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="example@hotmail.com">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput2" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleFormControlInput2"
-                        placeholder="*************">
-                </div>
+                <!--Fin de la linea formulario-->
 
-                <div class="row justify-content-between pt-2">
-                    <div class="col-sm-9 col-md-12 col-lg-9">
-                        <p>¿Aun no tienes cuenta?
-                            <a href="http://" class="registro">
-                                <i class="bi bi-person-fill px-1"> Registrate</i>
+                <!--Inicio del formulario de session-->
+                <form action="X">
+                    <div class="mb-3 pt-5">
+                        <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="example@hotmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleFormControlInput2"
+                            placeholder="*************">
+                    </div>
+
+                    <div class="row justify-content-between pt-2">
+                        <div class="col-sm-9 col-md-12 col-lg-9">
+                            <p>¿Aun no tienes cuenta?
+                                <a type="button" class="registro" data-bs-toggle="modal"
+                                    data-bs-target="#regitroUsuario">
+                                    Registrate<i class="bi bi-person-plus px-2"></i>
+                                </a>
+                            </p>
+                            <a type="button" class="restablecer" data-bs-toggle="modal"
+                                data-bs-target="#restablecerPass">
+                                <p>Restablecer Contraseña <i class="bi bi-arrow-counterclockwise"></i></p>
                             </a>
-                        </p>
-                        <a href="http://">
-                            <p>Reestablecer Contraseña</p>
-                        </a>
+                        </div>
+                        <div class="col-sm-3 col-md-12 col-lg-3">
+                            <button type="button" class="btn btn-outline-primary btn-ingresar">Ingresar <i
+                                    class="bi bi-box-arrow-in-right"></i></button>
+                        </div>
                     </div>
-                    <div class="col-sm-3 col-md-12 col-lg-3">
-                        <button type="button" class="btn btn-outline-primary">Ingresar</button>
-                    </div>
-                </div>
+                </form>
+                <!--Fin del formulario de session-->
             </div>
         </div>
     </div>
@@ -103,7 +115,116 @@
             </div>
         </div>
     </footer>
+    <!--Fin de pie de pagina-->
 
+    <!--Modal de registro de usuario-->
+    <div class="modal fade" id="regitroUsuario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="registroUsuarioLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--Inidio de header-->
+                <div class="modal-header header-modal">
+                    <h5 class="modal-title" id="registroUsuarioLabel">Registro de Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!--Fin del header de la modal-->
+
+                <!--Inicio del body-->
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="nombreUsuario" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombreUsuarioModal">
+                        </div>
+                        <div class="mb-3 text-center">
+                            <label for="documentoUsuario" class="form-label ">Numero de Documento</label>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Tipo de documento</option>
+                                        <option value="1">C.C</option>
+                                        <option value="2">C.E</option>
+                                        <option value="3">T.I</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="documentoUsuarioModal">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccionUsuario" class="form-label">Direccion</label>
+                            <input type="text" class="form-control" id="direccionUsuarioModal">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoUsuario" class="form-label">Telefono</label>
+                            <input type="text" class="form-control" id="telefonoUsuarioModal">
+                        </div>
+                        <div class="mb-3">
+                            <label for="correoUsuario" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="correoUsuarioModal"
+                                placeholder="example@hotmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contrasenaUsuario" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasenaUsuarioModal"
+                                placeholder="**********">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contrasenaUsuario" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasenaUsuarioModal"
+                                placeholder="**********">
+                        </div>
+                    </form>
+                </div>
+                <!--Fin del body-->
+
+                <!--Inicio de footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger btn-cancelar" data-bs-dismiss="modal">Cancelar
+                        <i class="bi bi-x-octagon"></i></button>
+                    <button type="button" class="btn btn-outline-success btn-registrar">Registrar <i
+                            class="bi bi-check2-circle"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin de modal de registro de usuario-->
+
+    <!--Modal de restablecer contraseña-->
+    <div class="modal fade" id="restablecerPass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="restablecerPassLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--Inidio de header-->
+                <div class="modal-header header-modal">
+                    <h5 class="modal-title" id="registroUsuarioLabel">Restablecer Contraseña</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!--Fin del header de la modal-->
+
+                <!--Inicio del body-->
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="correoUsuario" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="correoUsuarioModal"
+                                placeholder="example@hotmail.com">
+                        </div>
+                    </form>
+                </div>
+                <!--Fin del body-->
+
+                <!--Inicio de footer-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger btn-cancelar" data-bs-dismiss="modal">Cancelar
+                        <i class="bi bi-x-octagon"></i></button>
+                    <button type="button" class="btn btn-outline-success btn-registrar">Restablecer <i
+                            class="bi bi-check2-circle"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

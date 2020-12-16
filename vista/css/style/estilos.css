@@ -6,6 +6,9 @@ small,
 label {
   font-family: "Open Sans";
 }
+i {
+  font-size: 20px;
+}
 .img {
   width: 36%;
 }
@@ -15,7 +18,7 @@ label {
 }
 
 .icon-facebook {
-  color: blue;
+  color: #1d93df;
   font-size: 1.6em;
 }
 
@@ -46,10 +49,42 @@ label {
 
 .registro {
   text-decoration: none;
-  color: blue;
+  color: #1d93df;
+  font-size: 16px;
+}
+
+.btn-ingresar {
+  border-color: #1d93df;
+}
+
+.btn-ingresar:hover {
+  background-color: #1d93df;
+}
+
+.restablecer {
+  text-decoration: none;
+  color: #1d93df;
 }
 
 .footer {
   font-weight: bold;
   font-size: 16px;
+}
+
+/* Estilos de la modal de registro de usuario */
+.header-modal,
+.modal-footer {
+  background-color: #1d93df;
+  color: #ffffff;
+}
+
+.btn-cancelar,
+.btn-registrar {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.modal-body {
+  background-color: azure;
+  font-weight: bold;
 }
