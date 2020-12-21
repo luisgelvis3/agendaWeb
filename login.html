@@ -17,7 +17,7 @@
 
     <!--js-->
     <script src="Styles/js/bootstrap/bootstrap.js"></script>
-    <script src="../../Styles/js/js-modal/modal.js"></script>
+    <script src="./Styles/js/validaciones/login.js"></script>
 
 </head>
 
@@ -171,9 +171,16 @@
                                 placeholder="**********">
                         </div>
                         <div class="mb-3">
-                            <label for="contrasenaUsuario" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="contrasenaUsuarioModal"
-                                placeholder="**********">
+                            <label for="contrasenaUsuario" class="form-label">Verificar
+                                Contraseña</label>
+                            <input type="password" class="form-control" id="verificacionContrasenaModal"
+                                onkeyup="verificarContrasena()" placeholder="**********">
+                            <div class="alert alert-danger ocultar" id="error" role="alert">
+                                No coincide con la contraseña!!!
+                            </div>
+                            <div class="alert alert-info ocultar" id="correcto" role="alert">
+                                Las contraseñas coinciden!!!
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -208,7 +215,7 @@
                     <form action="">
                         <div class="mb-3">
                             <label for="correoUsuario" class="form-label">Correo Electronico</label>
-                            <input type="email" class="form-control" id="correoUsuarioModal"
+                            <input type="email" class="form-control" id="correoRestablecerModal"
                                 placeholder="example@hotmail.com">
                         </div>
                     </form>
@@ -225,6 +232,8 @@
             </div>
         </div>
     </div>
+
 </body>
+
 
 </html>

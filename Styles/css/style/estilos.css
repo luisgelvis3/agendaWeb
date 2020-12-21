@@ -71,6 +71,13 @@ i {
   font-size: 16px;
 }
 
+.ocultar {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+}
 /* Estilos de la modal de registro de usuario */
 .header-modal,
 .modal-footer {
