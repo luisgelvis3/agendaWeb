@@ -1,0 +1,41 @@
+body {
+  background-color: azure !important;
+}
+
+.row > * {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.menu-vertical {
+  border-right: 2px solid #e0e0e0;
+  padding: 0em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
+  padding-left: 0rem !important;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 17px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #1d93df;
+  color: white;
+  width: 100%;
+}
+
+li a:hover:not(.active) {
+  background-color: #e0e0e0;
+}
